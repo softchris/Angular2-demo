@@ -23,6 +23,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './admin/auth.guard';
 import { HeroComponent } from './hero/hero.component';
 
+import { HtmlOutlet } from './common/html.outlet.directive';
+
 //defining routes
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -48,7 +50,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     HomeComponent,
     AdminComponent,
-    HeroComponent
+    HeroComponent,
+    HtmlOutlet
   ],
   imports: [
     BrowserModule,
